@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./img/block.svg" type="image/x-icon">
+</head>
+<body>
+    <main>
+        <div class="menu">
+            <h1 class="title"><span>Made with JavaScript!</span>Tic Tac Toe</h1>
+            <button class="primary" onclick="login()">Play Game</button> 
+            <button class="tertiary" onclick="exit()">Exit Game</button> 
+        </div>
+        <div class="login">
+            <h1 class="reference"><span>to continue</span>Login</h1>
+            <form>
+                <input type="email" name="lemail" id="lemail" placeholder="Email">
+                <input type="password" name="lpassword" id="lpassword" placeholder="Password">
+            </form>
+            <button class="primary" onclick="loginProcess()">Login</button>
+            <button class="secondary" onclick="register()">Register</button>
+            <button class="tertiary" onclick="menu()">Back Menu</button> 
+        </div>
+        <div class="register">
+            <h1 class="reference"><span>for create</span>Register</h1>
+            <form>
+                <input type="text" name="rname" id="rname" placeholder="Enter Username">
+                <input type="email" name="remail" id="remail" placeholder="Enter Email">
+                <input type="tel" name="rphone" id="rphone" placeholder="Enter Phone">
+                <input type="password" name="rpassword" id="rpassword" placeholder="Enter Password">
+            </form>
+            <button class="primary" onclick="registerProcess()">Register</button>
+            <button class="tertiary" onclick="menu()">Back Menu</button> 
+        </div>
+        <div class="play">
+            <h1 class="reference"><span class="username"></span>Let's Play!<span class="score"></span></h1>
+            <!-- <p class="score"></p> -->
+            <div class="box">
+                <button onclick="block1()" class="block1"></button>
+                <button onclick="block2()" class="block2"></button>
+                <button onclick="block3()" class="block3"></button>
+                <button onclick="block4()" class="block4"></button>
+                <button onclick="block5()" class="block5"></button>
+                <button onclick="block6()" class="block6"></button>
+                <button onclick="block7()" class="block7"></button>
+                <button onclick="block8()" class="block8"></button>
+                <button onclick="block9()" class="block9"></button>
+            </div>
+            <button class="tertiary" onclick="end()">End Game</button>
+        </div>
+    </main>
+    <figure>
+        <img src="./img/block.svg" alt="Block">
+    </figure>
+    <script src="./js/app.js"></script>
+</body>
+</html>
